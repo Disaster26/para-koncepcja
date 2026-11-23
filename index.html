@@ -420,7 +420,8 @@ button.ceg{border:0;padding:0;cursor:pointer;text-align:left;width:100%}
 .adv{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;align-items:center;gap:10px;min-height:52px;padding:0 18px 0 8px;background:var(--ink);color:#fff;border:0;border-radius:2px;cursor:pointer;font-weight:700;font-size:15px;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
 .adv i{display:grid;grid-template-columns:1fr 1fr;width:36px;height:36px;gap:2px}
 .adv i em{background:var(--c)}
-@media(max-width:760px){.adv .al{display:none}}
+.adv .am{display:none}
+@media(max-width:760px){.adv .al{display:none}.adv .am{display:inline}}
 .advp{position:fixed;right:18px;bottom:82px;z-index:71;width:min(400px,calc(100vw - 24px));height:min(560px,calc(100svh - 110px));background:#fff;box-shadow:0 24px 60px -20px rgba(0,0,0,.45),0 0 0 1px var(--line);border-radius:2px;display:flex;flex-direction:column}
 .advp[hidden]{display:none}
 .advp header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line)}
@@ -533,7 +534,7 @@ button.ceg{border:0;padding:0;cursor:pointer;text-align:left;width:100%}
    <div class="sh">
     <div>
      <h2>Wyszukiwarka kolorów</h2>
-     <p class="lead">3 638 kolorów z dwóch wzorników PARA. Szukaj po kodzie, rodzinie barw albo opisz, czego potrzebujesz.</p>
+     <p class="lead">3&nbsp;638 kolorów z dwóch wzorników PARA. Szukaj po kodzie, rodzinie barw albo opisz, czego potrzebujesz.</p>
     </div>
    </div>
    <form class="bigsearch" data-ksearch role="search">
@@ -657,7 +658,7 @@ button.ceg{border:0;padding:0;cursor:pointer;text-align:left;width:100%}
  <div class="wrap ph-hd">
   <nav class="crumb" aria-label="Okruszki"><a href="#/">Strona główna</a> / Kolory</nav>
   <h1>Kolory PARA</h1>
-  <p class="lead" id="klead">3 638 kolorów w dwóch wzornikach: DL5 (1 638) i DL4 (2 000). Wpisz kod, rodzinę barw albo opis.</p>
+  <p class="lead" id="klead">3&nbsp;638 kolorów w dwóch wzornikach: DL5 (1&nbsp;638) i DL4 (2&nbsp;000). Wpisz kod, rodzinę barw albo opis.</p>
  </div>
  <div class="ksearch"><div class="wrap">
   <form class="bigsearch" data-ksearch2 role="search" style="max-width:none">
@@ -831,7 +832,7 @@ button.ceg{border:0;padding:0;cursor:pointer;text-align:left;width:100%}
  </div>
 </footer>
 
-<button class="adv" type="button" aria-expanded="false" aria-controls="advp"><i><em style="--c:#C90C0F"></em><em style="--c:#0075A6"></em><em style="--c:#F7A600"></em><em style="--c:#4F5355"></em></i><span class="al">Zapytaj </span>doradcę</button>
+<button class="adv" type="button" aria-expanded="false" aria-controls="advp"><i><em style="--c:#C90C0F"></em><em style="--c:#0075A6"></em><em style="--c:#F7A600"></em><em style="--c:#4F5355"></em></i><span class="al">Zapytaj doradcę</span><span class="am">Doradca</span></button>
 <section class="advp" id="advp" hidden aria-label="Doradca PARA">
  <header><div><b>Doradca PARA</b><small>Odpowiada na podstawie kart produktów PARA</small></div><button type="button" data-advclose aria-label="Zamknij">&times;</button></header>
  <div class="msgs" id="msgs"><div class="msg ai">Dzień dobry. Zapytaj o farbę, połysk, zmywalność, czas schnięcia albo ile farby potrzebujesz na pokój.</div></div>
